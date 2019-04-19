@@ -1,5 +1,5 @@
-Demo Automation
-===============
+Tungsten Fabric Demo Automation
+===============================
 
 Prerequisites
 -------------
