@@ -2,7 +2,7 @@
 variable "api_key" {}
 
 variable "organization" {
-    default = "juniper"
+    default = "cloudops"
 }
 
 variable "username" {
