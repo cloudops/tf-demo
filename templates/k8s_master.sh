@@ -98,24 +98,3 @@ sudo chown $USER:$USER $HOME/.kube/config
 # ## INSTALL TUNGSTEN FABRIC
 sudo mkdir -pm 777 /var/lib/contrail/kafka-logs
 kubectl apply -f tf.yaml
-
-# --- expose an internal ui
-
-# sudo yum install -y epel-release
-# sudo yum install -y nginx
-# sudo vim /etc/nginx/conf.d/internal_ui.conf
-
-# server {
-#     listen 8080;
-
-#     location / {
-#         proxy_pass http://10.108.139.203:80;
-#         proxy_http_version 1.1;
-#         proxy_set_header Upgrade $http_upgrade;
-#         proxy_set_header Connection "Upgrade";
-#     }
-# }
-
-# sudo systemctl restart nginx
-
-# public ip pf rule for 8080
