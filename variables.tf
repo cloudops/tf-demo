@@ -33,7 +33,7 @@ variable "network_offering" {
 
 # default template type
 variable "template" {
-    default = "CentOS 7.6"
+    default = "CentOS 7.6 x64"
 }
 
 # default compute offering

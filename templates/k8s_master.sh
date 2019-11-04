@@ -69,7 +69,9 @@ sudo yum install -y docker
 sudo systemctl enable docker.service
 sudo service docker start
 
-sudo yum install -y kubelet kubeadm kubectl
+#sudo yum install -y kubelet kubeadm kubectl
+sudo yum install -y kubelet-1.14.7-0 kubeadm-1.14.7-0 kubectl-1.14.7-0
+
 
 ## disable the default CNI
 sudo sed -i 's|Environment="KUBELET_NETWORK_ARGS=--network-plugin=cni --cni-conf-dir=/etc/cni/net.d --cni-bin-dir=/opt/cni/bin"|#Environment="KUBELET_NETWORK_ARGS=--network-plugin=cni --cni-conf-dir=/etc/cni/net.d --cni-bin-dir=/opt/cni/bin"|g' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
